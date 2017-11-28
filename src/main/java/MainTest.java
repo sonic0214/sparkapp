@@ -16,7 +16,7 @@ public class MainTest {
 
   public static void test() {
     SparkConf conf = new SparkConf().setAppName("TestSparkApp").setMaster("spark://172.28.49.28:7077")
-            .setJars(new String[]{"/data0/sparkapp/jar/MainTest.jar"});
+            .setJars(new String[]{"/data0/download/sparkapp/target/spark-test-1.0-SNAPSHOT.jar"});
     JavaSparkContext sc = new JavaSparkContext(conf);
     List<Integer> data = Arrays.asList(1, 2, 3, 4, 5);
 //    JavaRDD<Integer> distData = sc.parallelize(data);
